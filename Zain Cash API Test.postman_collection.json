@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "e76642d1-47f7-4069-b764-8db22740ebce",
+		"name": "Zain Cash API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4704163"
+	},
+	"item": [
+		{
+			"name": "upload file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/mohammedalani/Desktop/zianCashTest/upload_file.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/file/upload",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "upload file RS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/mohammedalani/Desktop/zianCashTest/upload_file.txt"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/file/upload",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"file",
+								"upload"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Jul 2022 10:05:46 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Jul 2022 10:05:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Richard\": [\n        \"letter.txt\"\n    ],\n    \"jack\": [\n        \"paper.pdf\",\n        \"numbers.docx\"\n    ],\n    \"Johnny\": [\n        \"test.py\"\n    ]\n}"
+				}
+			]
+		}
+	]
+}
