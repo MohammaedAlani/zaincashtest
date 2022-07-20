@@ -12,26 +12,27 @@
 
 ## Install
 
-1- git clone https://github.com/MohammaedAlani/zaincashtest.git
-2- composer update
-3- create DB named zaincashtest
-4- cp .env.example .env
-5- php artisan optimize:clear
-6- php artisan migrate
-7- php artisan db:seed
+1- git clone https://github.com/MohammaedAlani/zaincashtest.git <br>
+2- composer update <br>
+3- create DB named zaincashtest <br>
+4- cp .env.example .env <br>
+5- php artisan optimize:clear <br>
+6- php artisan migrate <br>
+7- php artisan db:seed <br>
 
 
 ## Coding Test
-1- Postman collection url https://www.postman.com/collections/91546fddb233e1fc9aa6
-2- POST REEQUEST http://127.0.0.1:8000/api/file/upload
-3- file named found on root of project.
+1- Postman collection url https://www.postman.com/collections/91546fddb233e1fc9aa6 <br>
+2- POST REEQUEST http://127.0.0.1:8000/api/file/upload <br>
+3- file named found on root of project. <br>
 
 
 ## Database Test
-1- http://127.0.0.1:8000/api/employees go to this url to get result
-the sql statement is below
+1- http://127.0.0.1:8000/api/employees go to this url to get result <br>
+the sql statement is below <br>
 
 'SELECT city, salary, GROUP_CONCAT(CONCAT_WS(' ',first_name, last_name) SEPARATOR ',') AS full_name, sum(salary) as total_salary FROM employees GROUP BY city'
+<br>
 
 ## License
 
