@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileController;
+use App\Http\Controllers\EmployeeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,5 @@ use App\Http\Controllers\FileController;
 
 // upoad file to server and return the file sorted by requried schema
 Route::post('file/upload', [FileController::class, 'upload']);
+
+Route::get('employees', [EmployeeController::class, 'index']);
