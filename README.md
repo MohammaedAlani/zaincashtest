@@ -31,7 +31,7 @@
 1- http://127.0.0.1:8000/api/employees go to this url to get result <br>
 the sql statement is below <br>
 
-'SELECT city, salary, GROUP_CONCAT(CONCAT_WS(' ',first_name, last_name) SEPARATOR ',') AS full_name, sum(salary) as total_salary FROM employees GROUP BY city'
+SELECT city, salary, GROUP_CONCAT(CONCAT_WS(' ',first_name, last_name) SEPARATOR ',') AS full_name, sum(salary) as total_salary FROM employees GROUP BY city;
 <br>
 
 ## License
