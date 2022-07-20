@@ -75,12 +75,5 @@ class FileController extends Controller
             $newArrayOfFileContent, Response::HTTP_OK
         );
 
-        dd($arrayOfFileContent, $newArrayOfFileContent);
-
-
-        // usort($fileContents, function($a, $b) {
-        //     return strcmp($a[0], $b[0]);
-        // });
-        dd($request->all(), $fileContents, gettype($fileContents), $array);
     }
 }
